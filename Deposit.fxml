@@ -12,33 +12,17 @@
         <GridPane>
             <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="5">
                 <padding>
-                    <Insets left="10" right="30" top="10" bottom="10"/>
-                </padding>
-                <Label text="Deposit into account: " id="accountName"/>
-                <TextField fx:id="accountName"/>
-            </HBox>
-            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
-                <padding>
-                    <Insets left="30" right="30" top="10" bottom="10"/>
+                    <Insets left="10" right="10" top="10" bottom="10"/>
                 </padding>
                 <Label text="Amount to deposit: " id="amountDeposit"/>
-                <TextField fx:id="amountDeposit" id="amountDeposit"/>
+                <TextField fx:id="amountDeposit"/>
             </HBox>
-            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="1" spacing="5">
+            <HBox alignment="BOTTOM_LEFT" GridPane.rowIndex="1" GridPane.columnIndex="0" spacing="5">
                 <padding>
-                    <Insets left="10" right="30" top="10" bottom="10"/>
-                </padding>
-                <Label text="Updated balance: " id="updatedBalance"/>
-                <Label fx:id="updatedBalance" id="updatedBalance"/>
-            </HBox>
-            <Separator GridPane.columnSpan="2" GridPane.rowIndex="2"/>
-            <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="3" GridPane.columnIndex="1" spacing="5">
-                <padding>
-                    <Insets left="10" right="10" top="10" bottom="5"/>
+                    <Insets left="10" right="10" top="20" bottom="10"/>
                 </padding>
                 <Label text="Do you want to proceed with the deposit?"/>
             </HBox>
         </GridPane>
     </content>
 </DialogPane>
-
