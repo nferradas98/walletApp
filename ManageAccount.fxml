@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ControllerManageAccount" id="manageAccountDialog">
+
+    <content>
+        <GridPane>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" alignment="CENTER">
+                <padding>
+                    <Insets left="10" top="10" right="10" bottom="10"/>
+                </padding>
+                <Label text="Manage your accounts"/>
+            </HBox>
+            <Separator orientation="VERTICAL" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="4"/>
+            <HBox GridPane.columnIndex="3" GridPane.rowIndex="0" GridPane.columnSpan="2" alignment="CENTER">
+                <padding>
+                    <Insets left="10" top="10" right="10" bottom="10"/>
+                </padding>
+                <Label text="Create new account"/>
+            </HBox>
+
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER_LEFT">
+                <padding>
+                    <Insets left="10" top="10" right="15" bottom="5"/>
+                </padding>
+                <Label text="Account name: " id="accountName"/>
+                <TextField fx:id="accountName"/>
+            </HBox>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER_LEFT">
+                <padding>
+                    <Insets left="10" top="10" right="15" bottom="5"/>
+                </padding>
+                <Label text="Operation: " id="operation"/>
+                <TextField fx:id="operation"/>
+            </HBox>
+            <HBox GridPane.columnIndex="3" GridPane.rowIndex="1" alignment="CENTER_LEFT">
+                <padding>
+                    <Insets left="15" top="10" right="10" bottom="5"/>
+                </padding>
+                <Label text="Account name: " id="accountNameLabel"/>
+                <TextField fx:id="newAccountName"/>
+            </HBox>
+            <HBox GridPane.columnIndex="3" GridPane.rowIndex="2" alignment="CENTER_LEFT">
+                <padding>
+                    <Insets left="15" top="10" right="10" bottom="5"/>
+                </padding>
+                <Label text="Type: "/>
+                <TextField fx:id="typeOfAccount"/>
+            </HBox>
+        </GridPane>
+    </content>
+
+
+</DialogPane>
+

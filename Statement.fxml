@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+
+<DialogPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerStatement" id="statementDialog">
+    <content>
+        <GridPane>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="5">
+                <padding>
+                    <Insets left="10" right="30" top="20" bottom="20"/>
+                </padding>
+                <Label text="Month: " id="month"/>
+                <ComboBox promptText="choose" fx:id="monthComboBox">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="January"/>
+                            <String fx:value="February"/>
+                            <String fx:value="March"/>
+                            <String fx:value="April"/>
+                            <String fx:value="May"/>
+                            <String fx:value="June"/>
+                            <String fx:value="July"/>
+                            <String fx:value="August"/>
+                            <String fx:value="September"/>
+                            <String fx:value="October"/>
+                            <String fx:value="November"/>
+                            <String fx:value="December"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
+                <padding>
+                    <Insets left="30" right="10" top="20" bottom="20"/>
+                </padding>
+                <Label text="Year: " id="year"/>
+                <ComboBox promptText="choose" fx:id="yearComboBox">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="2020"/>
+                            <String fx:value="2021"/>
+                            <String fx:value="2022"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </HBox>
+            <Separator GridPane.columnSpan="2" GridPane.rowIndex="1"/>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="5">
+                <padding>
+                    <Insets left="10" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Username: " id="user"/>
+                <Label fx:id="user" id="user"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2" spacing="5">
+                <padding>
+                    <Insets left="30" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Account number: " id="accountNumber"/>
+                <Label fx:id="accountNumber" id="accountNumber"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="3" spacing="5">
+                <padding>
+                    <Insets left="10" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Total expenses: " id="totalExpenses"/>
+                <Label fx:id="totalExpenses" id="totalExpenses"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="3" spacing="5">
+                <padding>
+                    <Insets left="30" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Total money saved: " id="totalMoneySaved"/>
+                <Label fx:id="totalMoneySaved" id="totalMoneySaved"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2" spacing="5">
+                <padding>
+                    <Insets left="10" right="10" top="10" bottom="10"/>
+                </padding>
+                <Label text="Final balance: " id="finalBalance"/>
+                <Label fx:id="finalBalance" id="finalBalance"/>
+            </HBox>
+            <Separator GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+            <HBox alignment="BOTTOM_CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2" spacing="5">
+                <padding>
+                    <Insets left="10" right="10" top="10" bottom="5"/>
+                </padding>
+                <Label text="Would you like to download the .csv of this monthly statement?"/>
+            </HBox>
+        </GridPane>
+    </content>
+</DialogPane>

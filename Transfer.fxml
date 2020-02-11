@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ControllerTransfer" id="transferDialog">
+
+    <content>
+        <GridPane>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="5">
+                <padding>
+                    <Insets left="10" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="From account: " id="fromAccountName"/>
+                <TextField fx:id="fromAccountName"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
+                <padding>
+                    <Insets left="30" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="To account: " id="toAccountName"/>
+                <TextField fx:id="toAccountName"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="1" spacing="5" GridPane.columnSpan="2">
+                <padding>
+                    <Insets left="10" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Amount to transfer: " id="amountTransfer"/>
+                <TextField fx:id="amountTransfer"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="0" GridPane.rowIndex="2" spacing="5">
+                <padding>
+                    <Insets left="10" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Origin account balance: " id="originAccountUpdatedBalance"/>
+                <Label fx:id="originAccountUpdatedBalance" id="originAccountUpdatedBalance"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="2" spacing="5">
+                <padding>
+                    <Insets left="30" right="30" top="10" bottom="10"/>
+                </padding>
+                <Label text="Recipient account balance: " id="recipientAccountUpdatedBalance"/>
+                <Label fx:id="recipientAccountUpdatedBalance" id="recipientAccountUpdatedBalance"/>
+            </HBox>
+            <Separator GridPane.columnSpan="2" GridPane.rowIndex="3"/>
+            <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="4" GridPane.columnIndex="1" spacing="5">
+                <padding>
+                    <Insets left="10" right="10" top="10" bottom="5"/>
+                </padding>
+                <Label text="Do you want to proceed with the transfer?"/>
+            </HBox>
+        </GridPane>
+    </content>
+</DialogPane>
+

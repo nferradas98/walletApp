@@ -1,0 +1,84 @@
+* {
+  default-font-family: "Roboto";
+  font-default-color: #1d1128;
+  default-background: #f6e8ea;
+  color2: #25283d;
+  color3: #f4f4ed;
+}
+
+.root {
+  -fx-background-color: default-background;
+  -fx-font-color: font-default-color;
+  -fx-font-family: default-font-family;
+}
+
+.button {
+  -fx-background-color: color2;
+  -fx-text-fill: color3;
+}
+
+#mainVBOX {
+  -fx-background-color: color2;
+}
+
+#buttonVBOX {
+  -fx-background-color: color2;
+  -fx-text-fill: color3;
+}
+
+#login {
+  -fx-text-fill: color2;
+  -fx-background-color: default-background;
+}
+
+#btnSettings {
+  -fx-background-color: default-background;
+  -fx-text-fill: font-default-color;
+}
+
+#btnAccount {
+  -fx-background-color: default-background;
+  -fx-text-fill: font-default-color;
+}
+
+#depositDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#statementDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#settingsDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#expenseDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#transferDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#withdrawDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
+
+#manageAccountDialog {
+  -fx-background-color: default-background;
+  -fx-font-family: default-font-family;
+  -fx-text-fill: font-default-color;
+}
