@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
 <?import javafx.geometry.Insets?>
 <DialogPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
@@ -23,38 +22,8 @@
                 </padding>
                 <Label text="Create new account"/>
             </HBox>
-
-            <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER_LEFT">
-                <padding>
-                    <Insets left="10" top="10" right="15" bottom="5"/>
-                </padding>
-                <Label text="Account name: " id="accountName"/>
-                <TextField fx:id="accountName"/>
-            </HBox>
-            <HBox GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER_LEFT">
-                <padding>
-                    <Insets left="10" top="10" right="15" bottom="5"/>
-                </padding>
-                <Label text="Operation: " id="operation"/>
-                <TextField fx:id="operation"/>
-            </HBox>
-            <HBox GridPane.columnIndex="3" GridPane.rowIndex="1" alignment="CENTER_LEFT">
-                <padding>
-                    <Insets left="15" top="10" right="10" bottom="5"/>
-                </padding>
-                <Label text="Account name: " id="accountNameLabel"/>
-                <TextField fx:id="newAccountName"/>
-            </HBox>
-            <HBox GridPane.columnIndex="3" GridPane.rowIndex="2" alignment="CENTER_LEFT">
-                <padding>
-                    <Insets left="15" top="10" right="10" bottom="5"/>
-                </padding>
-                <Label text="Type: "/>
-                <TextField fx:id="typeOfAccount"/>
-            </HBox>
         </GridPane>
     </content>
-
-
 </DialogPane>
+
 
