@@ -4,7 +4,8 @@ import java.util.List;
 
 public class Handle{
 
-	public void newUser(int id, String first, String last, String username,
+	//Need to add Income
+	public boolean newUser(int id, String first, String last, String username,
 						String password, String pin) {
 		User newUser = new User();
 		
@@ -14,22 +15,33 @@ public class Handle{
 		newUser.setUsername(username);
 		newUser.setPassword(password);
 		newUser.setPin(pin);
+		//newuser.setIncome(income)
 		
 		//Update database with new User
+		Datasource.getInstance.createUser(newUser);
+		
+		return true;
 		
 	}
 	
-	public void logIn(int id, String pin) {
-		//get User from databse using id
-		User currentUser = new User(); //istead of this
+	/*------------------------------------------------------------------
+	 * Don't know what to do
+	 * -----------------------------------------------------------------
+	 */
+	public User logIn(String userName, String password) {
+		//get User from databse?
+		 User currentUser = Datasource.getInstance.getUser();		
 		
-		if(pin = currentUser.getPin()) {
-			//sucessfully logged in whta next?
+		//Checking that pin matches
+		if(password == currentUser.getPassword()) {
+			//sucessfully logged in what next?
+			
+			return currentUser;
 		}
 		
 	}
 	
-	public void newAccount(User user, String type, double balance) {
+	public boolean newAccount(User user, String type, double balance) {
 		//Creating a new account
 		Account newAcc = new Account();
 		newAcc.setType(type);
@@ -41,5 +53,9 @@ public class Handle{
 		user.setAccounts(newList);
 		
 		//Update database
+		//How to add a account to user.setAccount
+		if(Datasource.getInstance.createAccount(newAcc)) {
+			return true;
+		}
 	}
 }
